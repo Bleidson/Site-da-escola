@@ -10,14 +10,14 @@
     --cor01: #317327;
     --cor02: rgb(25, 187, 52);
     --cor03: #F2A81D;
-    --cor04: 
+    --cor04: #FFDE6B;
 
-    --font-destaque:'Arial', cursive;
+    --font-destaque:'bebas neuer', cursive;
     --font-padrao: 'Arial', 'Helvetica', sans-serif;
 }
 
 body{
-    background-color: var(--cor03);
+    background-image: radial-gradient(circle, #FFDE6B 30%, #BD7E05);
 }
 
 header{
@@ -27,6 +27,7 @@ header{
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
+    
 }
 
 header h1{
@@ -51,7 +52,7 @@ nav{
     align-items: center;
     background-color: rgba(255, 255, 255, 0);
     height: 30px;
-    border-top: 2px solid var(--cor04);
+    
     
 }
 
@@ -70,13 +71,20 @@ nav a{
     border-radius: 5px;
     padding: 5px 10px;
     font-family:var(--font-destaque);
+
+    background-color: transparent;
+    background-image: linear-gradient(to top right, transparent 0%, transparent 49%, var(--cor03) 50%);
+    background-size: 200% 200%;
+    background-position: bottom left;
+    transition: background-position 0.5s ease;    
 }
 
 nav a:hover{
+    background-position: top right;
+    border: none;
+    color:white;
     
-    background-color: var(--cor03);
-    color: white;
-    font-family: var(--font-des);
+    box-shadow: 0px 0px 10px 5px rgba(17, 119, 17, 0.635);
 }
 
 
