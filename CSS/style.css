@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;800&display=swap');
 
 *{
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 :root{
@@ -13,7 +14,7 @@
     --cor04: #FFDE6B;
 
     --font-destaque:'bebas neuer', cursive;
-    --font-padrao: 'Arial', 'Helvetica', sans-serif;
+    --font-padrao: 'Outfit', 'Arial', sans-serif;
 }
 
 body{
@@ -22,31 +23,24 @@ body{
 
 header{
     background-image: radial-gradient(ellipse at center, var(--cor02)1%, var(--cor01) 100%);
-    height: 135px;
+    height: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
     
 }
 
-header h1{
-    
-    color: white;
-    text-decoration: none;
-    font-weight: bolder;
-    font-size:40px;
-
-}
 header p{
     color: white;
 }
 
-header img{
-    margin-top: 40px;
-    height: 160px;
-    position: relative;
-    z-index:999;
+header .logo-CETI{
+    
+    width: 130px;
+    
 }
 nav{
     display: flex;
@@ -54,19 +48,17 @@ nav{
     align-items: center;
     background-color: rgba(255, 255, 255, 0);
     height: 30px;
-    
+    list-style-type: none;
     
 }
 
-#links{
+.links{
     display: flex;
     justify-content:space-around;
     width: 700px;
 }
-nav ul{
-    list-style-type: none;
-}
-nav a{
+
+.links a{
     text-decoration: none;
     color: white;
     font-weight: bolder;
@@ -81,7 +73,7 @@ nav a{
     transition: background-position 0.5s ease;    
 }
 
-nav a:hover{
+.links a:hover{
     background-position: top right;
     border: none;
     color:white;
@@ -89,49 +81,59 @@ nav a:hover{
     box-shadow: 0px 0px 10px 5px rgba(17, 119, 17, 0.635);
 }
 
+main{
+    display: flex;
+    flex-direction: row;
+    max-width: 1440px;
+    margin: auto;
+}
 
-/*
-aside{
-    background-image: linear-gradient(to bottom, #e0b51a 30%, #BD7E05);
-    float: left;
-    width: 25%;
-    max-width: 240px;
-    padding-top: 30px;
-    
+.menu-lateral{
+    background-color: white;
+    flex: 0.2;
+    padding: 30px 10px 10px 10px;
+    font-family: var(--font-padrao);
     
 }
-aside legend{
+
+.menu-lateral-content{
+    margin-bottom: 20px;
+}
+
+.menu-lateral legend{
     text-align: center;
     
-    color: darkgreen;
-    background-image: linear-gradient(to bottom, white 70%, rgba(255, 255, 255, 0));
+    color: white;
+    background-color: var(--cor03);
     padding: 10px 20px;
     border-top: 4px solid #317327;
-    
+    border-radius: 0px 0px 10px 10px;
     font-size: 0.8em;
+    box-shadow: 0px 0px 15px  rgb(56, 55, 55);
 }
 
-fieldset{
+.menu-lateral fieldset{
     display: block;
-    margin-inline-start: 2px;
-    margin-inline-end: 2px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
     padding-block-start: 0.35em;
     padding-inline-start: 0.75em;
     padding-inline-end: 0.75em;
     padding-block-end: 0.625em;
     min-inline-size: min-content;
     border-width: 4px;
-    border-style:none;
+    border-style:dashed;
     border-color: var(--cor01);
     border-image: initial;
-    
+    min-width: 150px;
+    max-width: 200px;
 }
 
-aside ul{
+.menu-lateral ul{
     list-style-type:none;
     
 }
-aside li{
+.menu-lateral li{
     padding: 5px 10px 5px 10px;
     border-top: 1px solid rgba(128, 128, 128, 0.348);
     display: flex;
@@ -140,8 +142,39 @@ aside li{
     
 }
 
-aside a{
+.menu-lateral a{
     text-decoration: none;
     color: black;
 }
-*/
+
+.main-content{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0.8;
+    background-color: white;
+    padding: 30px;
+    font-family: var(--font-padrao);
+}
+
+footer{
+    text-align: center;
+    font: 16px 'Outfit' ;
+    background-color: var(--cor01);
+    color: white;
+    padding: 10px;
+}
+
+@media (max-width:800px){
+    header{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    nav{
+        width: 150px;
+    }
+
+    .links{
+        flex-direction: column;
+    }
+}
