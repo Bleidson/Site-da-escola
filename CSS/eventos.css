@@ -1,0 +1,60 @@
+/* Estilos para o feed de eventos */
+.event-feed {
+    width: 100%;
+}
+
+.event-feed h2 {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    color: #317327; /* cor01 */
+    margin-bottom: 20px;
+}
+
+.event-card {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FFDE6B; /* cor04 */
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.event-card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.event-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.event-info h3 {
+    font-family: 'Bebas Neue', cursive;
+    color: #F2A81D; /* cor03 */
+    margin-bottom: 10px;
+}
+
+.event-info p {
+    font-family: 'Outfit', 'Arial', sans-serif;
+    margin: 5px 0;
+    color: #333;
+}
+
+.saiba-mais-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #317327; /* cor01 */
+    color: white;
+    text-decoration: none;
+    font-family: 'Outfit', 'Arial', sans-serif;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.saiba-mais-btn:hover {
+    background-color: rgb(25, 187, 52); /* cor02 */
+}
