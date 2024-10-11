@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4; /* Fundo claro */
-    color: #333; /* Cor do texto padrão */
+    background-color: #f4f4f4; 
+    color: #333; 
     margin: 0;
     padding: 0;
 }
@@ -10,14 +10,14 @@ body {
     max-width: 1200px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #ffffff; /* Fundo branco */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    border-radius: 12px; /* Bordas arredondadas */
+    background-color: #ffffff; 
+    box-shadow: 0px 4px 20px 20px rgba(0, 0, 0, 0.1); 
+    border-radius: 12px; 
 }
 
 .student-dashboard h1 {
     font-size: 2.2em;
-    color: #2d2f33; /* Cor do título */
+    color: #317327; 
     text-align: center;
     margin-bottom: 40px;
     text-transform: uppercase;
@@ -33,25 +33,25 @@ body {
 }
 
 .overview-card {
-    background-color: #f8f9fa; /* Fundo claro */
-    color: #333; /* Cor do texto */
+    background-color: #f8f9fa; 
+    color: #333; 
     padding: 20px;
     border-radius: 10px;
     width: calc(25% - 20px);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05); /* Sombra suave */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
 }
 
 .overview-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Sombra mais intensa */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); 
 }
 
 .overview-card h2 {
     font-size: 1.6em;
     margin-bottom: 10px;
-    color: #495057; /* Cor do título do cartão */
+    color: #317327; 
 }
 
 .overview-card p {
@@ -61,7 +61,7 @@ body {
 
 .overview-card a {
     color: #ffffff;
-    background-color: #4e73df; /* Azul tecnológico */
+    background-color: #F2A81D; 
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
@@ -70,7 +70,7 @@ body {
 }
 
 .overview-card a:hover {
-    background-color: #3b5db6; /* Azul mais escuro */
+    background-color: #a3751e;
 }
 
 .dashboard-details {
@@ -83,18 +83,18 @@ body {
     background-color: #f8f9fa;
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05); /* Sombra suave */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05); 
     transition: box-shadow 0.3s ease;
 }
 
 .details-section:hover {
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Sombra mais intensa */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .details-section h3 {
     font-size: 1.8em;
     margin-bottom: 20px;
-    color: #495057; /* Cor do título da seção */
+    color: #317327; 
 }
 
 .grades-table, .schedule-table {
@@ -105,7 +105,7 @@ body {
 
 .grades-table th, .grades-table td,
 .schedule-table th, .schedule-table td {
-    background-color: #ffffff; /* Branco */
+    background-color: #ffffff; 
     color: #333;
     padding: 12px;
     text-align: center;
@@ -123,20 +123,20 @@ body {
 }
 
 .occurrences-list li {
-    background-color: #ffffff; /* Branco */
+    background-color: #ffffff; 
     color: #333;
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05); /* Sombra suave */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
     transition: box-shadow 0.3s ease;
 }
 
 .occurrences-list li:hover {
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Sombra mais intensa */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); 
 }
 
-/* Estilo do Gráfico */
+
 .chart-container {
     margin-top: 40px;
 }
